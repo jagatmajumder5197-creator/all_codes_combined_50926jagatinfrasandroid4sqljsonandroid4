@@ -261,6 +261,10 @@ function renderResult(student) {
     grandFullMarks += fm;
     grandObtained += total;
 
+const writtenDisplay = (obtainedWritten === 0) ? '-' : obtainedWritten;
+const oralDisplay = (obtainedOral === 0) ? '-' : obtainedOral;
+
+    
     const fmStructure = getFmBreakdown(fm, student[sub.written], student.CLASS, sub.name);
 
     rowsHtml += `
@@ -270,8 +274,15 @@ function renderResult(student) {
         <td>${fmStructure.oral}</td>
         <td>${fm}</td>
         <td class="spacer-col"></td>
-        <td><b>${obtainedWritten}</b></td>
-        <td><b>${obtainedOral}</b></td>
+       
+
+
+        
+        <td><b>${writtenDisplay}</b></td>
+        <td><b>${oralDisplay}</b></td>
+        
+        
+        
         <td><b>${total}</b></td>
         <td><b>${Math.round(percentage)}%</b></td>
         <td><b>${grade}</b></td>
