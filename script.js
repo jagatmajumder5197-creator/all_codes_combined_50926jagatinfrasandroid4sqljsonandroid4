@@ -301,8 +301,8 @@ const oralDisplay = (obtainedOral === 0) ? '-' : obtainedOral;
 
   document.getElementById('grandFullMarks').innerText = grandFullMarks;
   document.getElementById('grandTotal').innerHTML = `<b>${grandObtained}</b>`;
-  document.getElementById('grandPercentage').innerHTML = `<b>${Math.round(grandPercentage)}%</b>`;
-
+  document.getElementById('grandPercentage').innerHTML = `<b>${grandPercentage.toFixed(2)}%</b>`;
+  
   const resultElem = document.getElementById('grandResult');
   resultElem.innerHTML = `<b>${hasFailed ? 'Fail' : 'Pass'}</b>`;
 
