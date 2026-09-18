@@ -473,11 +473,11 @@ body {
   border: 1px solid #bfdbfe;
   border-radius: 4px;
   background: #eff6ff;
-  color: #ffffff;
+  color: #ff00ff;
   font-size: 8px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 102, 255, 0.2);
+  box-shadow: none;
   transition: all 0.2s ease;
 }
 
