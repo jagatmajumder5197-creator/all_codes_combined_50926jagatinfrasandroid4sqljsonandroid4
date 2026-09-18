@@ -469,12 +469,12 @@ body {
 }
 
 .action-buttons button {
-  padding: 6px 14px;
-  border: 1px solid #0044cc;
+  padding: 3px 7px;
+  border: 1px solid #bfdbfe;
   border-radius: 4px;
-  background: #0066ff;
+  background: #eff6ff;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 8px;
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 102, 255, 0.2);
